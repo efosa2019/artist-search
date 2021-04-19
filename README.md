@@ -3,10 +3,16 @@
 Prerequisites
 Important: For the application to work, you must have a valid client ID placed in src/config/spotify.json:
 
+
+
+
+
 {
   "clientId": "Place your client id here"
 }
 You must also make sure that http://localhost:3000 (or wherever you're running the app from) is placed in its redirect URIs.
+
+
 
 Here's how to set it all up:
 
