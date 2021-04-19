@@ -2,7 +2,6 @@ import React from 'react';
 import { IconButton , Avatar, ListItem, ListItemText, Typography} from '@material-ui/core';
 import './ListItems.scss';
 import DeleteIcon from '@material-ui/icons/Delete';
-import FlipMove from 'react-flip-move';
 import createStyles from '@material-ui/core/styles/createStyles';
 import withStyles from '@material-ui/core/styles/withStyles';
 
@@ -41,10 +40,7 @@ function ListItems(props){
         </div>
     </div>})
     return <div>
-        <FlipMove duration={300} easing="ease-in-out">
-        {listItems}
-        </FlipMove>
-    
+     {listItems}  
     </div>;
   }
 
