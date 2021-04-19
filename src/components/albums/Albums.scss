@@ -1,0 +1,44 @@
+.albums-container {
+    padding: 2rem;
+
+    .albums-header {
+        margin-bottom: 2rem;
+
+        .artist-name-and-image {
+            display: flex;
+            align-items: center;
+
+            .artist-image {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .albums {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        .album {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .albums-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .artist-name-and-image {
+            flex-direction: column;
+            text-align: center;
+
+            .artist-image {
+                margin: 8px 0 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    .title-logo {
+        display: flex;
+        align-items: center;
+
+        .spotify-logo {
+            height: 32px;
+            width: auto;
+            padding-right: 2px;
+        }
+
+        .title {
+            line-height: normal;
+            padding-bottom: 0;
+        }
+    }
+
+    .navbar-buttons {
+        display: flex;
+        align-items: center;
+
+        div {
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+
+        .navbar-theme-toggle {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .link {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 8px 0;
+    }
+    .title {
+        justify-content: center;
+        padding-bottom: 8px;
+    }
+}
