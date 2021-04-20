@@ -1,6 +1,6 @@
 
 
-Prerequisites
+#Prerequisites
 Important: For the application to work, you must have a valid client ID placed in src/config/spotify.json:
 
 
